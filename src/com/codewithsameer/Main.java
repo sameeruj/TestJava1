@@ -1,8 +1,10 @@
 //First Java program. Started to learn Java. Very easy if you know C++.
 package com.codewithsameer;
-//Java packages. Biggest advantage of Java. I'm working on Java 15. Java 17 is long time support from Oracle
-//Planned for 2021.
+//Java packages: biggest advantage of Java. I'm working on Java 15. Java 17 is a long time support from Oracle
+//planned for 2021.
 import java.awt.*;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 
@@ -23,7 +25,7 @@ public class Main {
         //Pointers in Java
         int x =1, y=1;
         Point point1 = new Point(x,y);
-        Point point2 = point1;
+        Point point2 = point1; //point1 and point2 are pointing to same address now.
         point1.x = 2;
         System.out.println(point2);
 
@@ -36,6 +38,21 @@ public class Main {
         System.out.println(message2.replace("!!",  "**"));
         //Demonstrate that String objects are immutable or cannot be changed.
         System.out.println(message2);
+
+        //Arrays in Java
+        int[] numbers = new int[10];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        //numbers[10] = 3;
+        System.out.println(Arrays.toString(numbers));
+
+        //Other way to Initialize an array
+        int [] numbers2 = {3, 4, 6, 1, 2};
+        System.out.println(numbers2.length);
+        System.out.println(Arrays.toString(numbers2));
+        Arrays.parallelSort(numbers2);
+        System.out.println(Arrays.toString(numbers2));
+
         System.out.println("EOF");
     }
 }
