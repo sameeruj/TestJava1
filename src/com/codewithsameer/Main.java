@@ -8,6 +8,7 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -82,6 +83,12 @@ public class Main {
 
         NumberFormat percentage = NumberFormat.getPercentInstance();
         System.out.println(percentage.format(0.1));
+
+        //Accept input from user
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = input.nextLine().trim();
+        System.out.println("your name is : " + name);
 
         System.out.println("EOF");
     }
