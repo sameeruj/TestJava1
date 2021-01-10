@@ -4,6 +4,7 @@ package com.codewithsameer;
 //planned for 2021.
 import java.awt.*;
 import java.lang.reflect.Array;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
@@ -70,7 +71,17 @@ public class Main {
         System.out.println(l);
 
         //Math Class
+        System.out.println(Math.min(5,10));
+        double m = (int) (Math.random()*100);
+        System.out.println(m);
 
+        //Formatting numbers
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String cur = currency.format(123456.789);
+        System.out.println(cur);
+
+        NumberFormat percentage = NumberFormat.getPercentInstance();
+        System.out.println(percentage.format(0.1));
 
         System.out.println("EOF");
     }
