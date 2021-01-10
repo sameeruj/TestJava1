@@ -27,11 +27,12 @@ public class Main {
         Point point1 = new Point(x,y);
         Point point2 = point1; //point1 and point2 are pointing to same address now.
         point1.x = 2;
+        point2.y = 10;
         System.out.println(point2);
 
         //Strings in Java
         String message = "hello" + " there";
-        System.out.println(message.endsWith("re"));
+        //System.out.println(message.endsWith("re"));
         System.out.println(message.toUpperCase(Locale.ROOT));
         //String class has all these functions which you can use at your convinience!!!
         String message2 = "GoodMorning!!";
@@ -52,6 +53,24 @@ public class Main {
         System.out.println(Arrays.toString(numbers2));
         Arrays.parallelSort(numbers2);
         System.out.println(Arrays.toString(numbers2));
+
+        //Multidimensional Arrays
+        //int [][] multi = {{1,2,3},{4,5, 6}};
+        int [][][] multi = new int [2][2][2];
+        multi[0][0][0] = 4;
+        System.out.println(Arrays.deepToString(multi));
+
+        //Constants
+        final float pi = 3.14f;
+        System.out.println(pi);
+
+        //Type casting
+        String k = "1.1";
+        double l = Double.parseDouble(k) + 2;
+        System.out.println(l);
+
+        //Math Class
+
 
         System.out.println("EOF");
     }
