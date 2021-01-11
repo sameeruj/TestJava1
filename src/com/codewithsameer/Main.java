@@ -108,8 +108,10 @@ public class Main {
         System.out.print("Enter the income: ");
         try {
             long inputIncome = input.nextLong();
-            boolean hasHighIncome = inputIncome > 100_000;
-            System.out.println(hasHighIncome);
+            //boolean hasHighIncome = inputIncome > 100_000;
+            //System.out.println(hasHighIncome);
+            String className = inputIncome > 100_000 ? "First" : "Second" ;
+            System.out.println(className);
         }
         catch (InputMismatchException e){
             System.out.println("Invalid input " + e.getMessage());
