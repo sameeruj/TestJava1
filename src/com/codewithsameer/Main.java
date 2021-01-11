@@ -100,7 +100,10 @@ public class Main {
         double payments = in.nextLong();
 
         double monthlyPayments = principal * (  (rate * Math.pow((1+rate), payments)) / (Math.pow((1+rate), payments) - 1) );
-        System.out.print("Monthly payments that needs to be done is : " + monthlyPayments);
+        String paymentDollars = NumberFormat.getCurrencyInstance().format(monthlyPayments);
+        System.out.print("Monthly payments that needs to be done is : " + paymentDollars);
+
+
         //System.out.println("EOF");
     }
 }
