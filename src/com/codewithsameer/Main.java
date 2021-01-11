@@ -2,13 +2,12 @@
 package com.codewithsameer;
 //Java packages: biggest advantage of Java. I'm working on Java 15. Java 17 is a long time support from Oracle
 //planned for 2021.
+import org.w3c.dom.ls.LSOutput;
+
 import java.awt.*;
 import java.lang.reflect.Array;
 import java.text.NumberFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -91,7 +90,7 @@ public class Main {
         System.out.println("your name is : " + name);*/
 
         //Calculate monthly mortgage payments
-        Scanner in = new Scanner(System.in);
+        /*Scanner in = new Scanner(System.in);
         System.out.print("Enter Principal: ");
         long principal = in.nextLong();
         System.out.print("Enter Interest rate: ");
@@ -101,9 +100,19 @@ public class Main {
 
         double monthlyPayments = principal * (  (rate * Math.pow((1+rate), payments)) / (Math.pow((1+rate), payments) - 1) );
         String paymentDollars = NumberFormat.getCurrencyInstance().format(monthlyPayments);
-        System.out.print("Monthly payments that needs to be done is : " + paymentDollars);
+        System.out.print("Monthly payments that needs to be done is : " + paymentDollars);*/
 
-
-        //System.out.println("EOF");
+        // Conditional statements, logical and comparison statements
+        //int income = 80000;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the income: ");
+        try {
+            long inputIncome = input.nextLong();
+            boolean hasHighIncome = inputIncome > 100_000;
+            System.out.println(hasHighIncome);
+        }
+        catch (InputMismatchException e){
+            System.out.println("Invalid input " + e.getMessage());
+        }
     }
 }
