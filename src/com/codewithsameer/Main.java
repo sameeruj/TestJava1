@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Variables in Java
+        /*//Variables in Java
         //Primitive Types : 8 types: byte, short, int, long, float, double, Char and bool.
         int age = 35;
         System.out.println("Hi there");
@@ -88,8 +88,19 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your name: ");
         String name = input.nextLine().trim();
-        System.out.println("your name is : " + name);
+        System.out.println("your name is : " + name);*/
 
-        System.out.println("EOF");
+        //Calculate monthly mortgage payments
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter Principal: ");
+        long principal = in.nextLong();
+        System.out.print("Enter Interest rate: ");
+        double rate = in.nextDouble();
+        System.out.print("Enter number of Payments: ");
+        double payments = in.nextLong();
+
+        double monthlyPayments = principal * (  (rate * Math.pow((1+rate), payments)) / (Math.pow((1+rate), payments) - 1) );
+        System.out.print("Monthly payments that needs to be done is : " + monthlyPayments);
+        //System.out.println("EOF");
     }
 }
