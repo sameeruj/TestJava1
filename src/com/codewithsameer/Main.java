@@ -104,17 +104,25 @@ public class Main {
 
         // Conditional statements, logical and comparison statements
         //int income = 80000;
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         System.out.print("Enter the income: ");
         try {
             long inputIncome = input.nextLong();
             //boolean hasHighIncome = inputIncome > 100_000;
             //System.out.println(hasHighIncome);
+            //Ternary operator
             String className = inputIncome > 100_000 ? "First" : "Second" ;
             System.out.println(className);
         }
         catch (InputMismatchException e){
             System.out.println("Invalid input " + e.getMessage());
+        }*/
+
+        // Loops in Java
+        // For loop
+        for (int i =5;  i>=1; i--){
+            System.out.println("hello " + i);
         }
+        System.out.println("EOF");
     }
 }
