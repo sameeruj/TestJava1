@@ -144,7 +144,7 @@ public class Main {
         }while(!input.equals("stop"));*/
 
         // Break and continue statements in while loop.
-        String input = "";
+        /*String input = "";
         Scanner in = new Scanner(System.in);
         while (true){
             System.out.print("Input: ");
@@ -154,7 +154,15 @@ public class Main {
             if (input.equals("quit"))
                 break;
             System.out.println(input);
+        }*/
+
+        //for each loop. This is always a forward only loop. You cannot iterate backwards.
+        String [] fruits = {"apple", "orange", "mango"};
+        for(String fruit: fruits){
+            System.out.println(fruit);
         }
+
+
         System.out.println("EOF");
     }
 }
