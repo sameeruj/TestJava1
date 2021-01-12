@@ -35,7 +35,7 @@ public class Main {
         String message = "hello" + " there";
         //System.out.println(message.endsWith("re"));
         System.out.println(message.toUpperCase(Locale.ROOT));
-        //String class has all these functions which you can use at your convinience!!!
+        //String class has all these functions which you can use at your convenience!!!
         String message2 = "GoodMorning!!";
         System.out.println(message2.replace("!!",  "**"));
         //Demonstrate that String objects are immutable or cannot be changed.
@@ -135,14 +135,26 @@ public class Main {
         }*/
         // Same thing with do while loop
         // Here the loop gets executed atleast once even if condition is false
-        System.out.println("Input: ");
-        input = in.next().toLowerCase();
-        System.out.println(input);
+        /*String input = "";
+        Scanner in = new Scanner(System.in);
         do{
             System.out.println("Input: ");
             input = in.next().toLowerCase();
             System.out.println(input);
-        }while(!input.equals("stop"));
+        }while(!input.equals("stop"));*/
+
+        // Break and continue statements in while loop.
+        String input = "";
+        Scanner in = new Scanner(System.in);
+        while (true){
+            System.out.print("Input: ");
+            input = in.next().toLowerCase();
+            if (input.equals("pass"))
+                continue;
+            if (input.equals("quit"))
+                break;
+            System.out.println(input);
+        }
         System.out.println("EOF");
     }
 }
