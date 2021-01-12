@@ -90,7 +90,8 @@ public class Main {
         System.out.println("your name is : " + name);*/
 
         //Calculate monthly mortgage payments
-        /*Scanner in = new Scanner(System.in);
+        //Enhance this program to take valid inputs. To make the code cleaner we can use functions.
+        Scanner in = new Scanner(System.in);
         System.out.print("Enter Principal: ");
         long principal = in.nextLong();
         System.out.print("Enter Interest rate: ");
@@ -100,7 +101,7 @@ public class Main {
 
         double monthlyPayments = principal * (  (rate * Math.pow((1+rate), payments)) / (Math.pow((1+rate), payments) - 1) );
         String paymentDollars = NumberFormat.getCurrencyInstance().format(monthlyPayments);
-        System.out.print("Monthly payments that needs to be done is : " + paymentDollars);*/
+        System.out.print("Monthly payments that needs to be done is : " + paymentDollars);
 
         // Conditional statements, logical and comparison statements
         //int income = 80000;
@@ -157,11 +158,10 @@ public class Main {
         }*/
 
         //for each loop. This is always a forward only loop. You cannot iterate backwards.
-        String [] fruits = {"apple", "orange", "mango"};
+        /*String [] fruits = {"apple", "orange", "mango"};
         for(String fruit: fruits){
             System.out.println(fruit);
-        }
-
+        }*/
 
         System.out.println("EOF");
     }
