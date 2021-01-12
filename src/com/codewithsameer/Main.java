@@ -120,9 +120,29 @@ public class Main {
 
         // Loops in Java
         // For loop
-        for (int i =5;  i>=1; i--){
+        // Useful when we know how many times to repeat
+        /*for (int i =5;  i>=1; i--){
             System.out.println("hello " + i);
-        }
+        }*/
+        // While loop
+        // Are useful when we don't know how many times to repeat.
+        /*String input = "";
+        Scanner in = new Scanner(System.in);
+        while (!input.equals("stop")){
+            System.out.println("Input: ");
+            input = in.next().toLowerCase();
+            System.out.println(input);
+        }*/
+        // Same thing with do while loop
+        // Here the loop gets executed atleast once even if condition is false
+        System.out.println("Input: ");
+        input = in.next().toLowerCase();
+        System.out.println(input);
+        do{
+            System.out.println("Input: ");
+            input = in.next().toLowerCase();
+            System.out.println(input);
+        }while(!input.equals("stop"));
         System.out.println("EOF");
     }
 }
